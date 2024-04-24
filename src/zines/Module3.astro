@@ -1,0 +1,243 @@
+<article data-page style={{ backgroundColor: "#ee6da2", color: "black" }}>
+  <div data-page-zine="1">
+    <div class="number">3</div>
+    <h1>LGBTQ+ ONLINE</h1>
+    <p>
+      How digitality can aid in queer activism and community—providing global
+      spaces of majorities for groups historically in the minority.
+    </p>
+  </div>
+  <div data-page-zine="2">
+    <p style="margin-block-end: auto">
+      Historically, queer activism has often been a fight for visibility and
+      existence in the face of systemic oppression and societal marginalization.
+      From the Stonewall Riots of 1969, which catalyzed the modern LGBTQ+ rights
+      movement, to the AIDS activism of the 1980s, which melded grassroots
+      mobilization with radical demands for medical research and policy reform,
+      the journey has been fraught with both adversity and achievement. These
+      movements, primarily localized and limited by physical presence, laid the
+      groundwork for the principles of resilience and solidarity that define
+      queer activism today.
+    </p>
+  </div>
+  <div data-page-zine="3">
+    <p>
+      This paper surfaces ways in which queer communities have been bolstered by
+      digital spaces in which to operate and find support in.
+    </p>
+    <p>This is done over two themes: </p>
+
+    <ol style="margin-block-end: auto;">
+      <li>
+        <strong>Early Digital Queer Communities</strong> — A historical look at ways
+        in which support groups and resource sharing took place with technology.
+        Specifically, this section focuses on two Bulletin Board Systems (BBSes),
+        the precursor to the internet.
+      </li>
+
+      <li
+        ><strong>Contemporary Digital Archives</strong> — In the modern day, how
+        does the internet keep alive the queer and AIDS activism and awareness of
+        yesterday?</li
+      >
+    </ol>
+  </div>
+  <div data-page-zine="4">
+    <h2>3.1 Past — The Backroom</h2>
+    <figure>
+      <img src="/img/module3/1rot.png" data-media="print" />
+      <img src="/img/module3/1.png" />
+    </figure>
+    <p class="smaller">
+      "The New York-based Backroom was one of the earliest gay-specific BBSes in
+      the United States. Like many BBSes, the Backroom offered a variety of
+      topical forums, but the most well-known was SURVIVORS. Co-moderated by
+      David Charnow, SURVIVORS offered a safe space for PWAs (People With AIDS)
+      to share resources, communicate, and build community. Printed copies of
+      messages from SURVIVORS are held in the ONE National Gay & Lesbian
+      Archives. Beyond its fora, the Backroom also hosted a semi-regular
+      in-person gathering, the Backroom Bash."
+    </p>
+  </div>
+  <div data-page-zine="5">
+    <h2>3.2 Past — G.L.I.B</h2>
+    <figure>
+      <img src="/img/module3/glibRot.jpg" data-media="print" />
+      <img src="/img/module3/glib.png" />
+    </figure>
+    <p class="smaller">
+      "Founded in 1986, Arlington, VA-based GLIB was among the most prominent
+      early gay and lesbian BBSes in the United States. In 1993, it ranked as #5
+      in industry trade magazine Boardwatch’s “Top 100 Boards” poll—a rare feat
+      given the prominence of non-community-specific boards within the field.
+      GLIB offered a variety of features common to BBSes, including messaging,
+      chat, a file library, access to content from major US publications, and
+      games."
+    </p>
+  </div>
+  <div data-page-zine="6">
+    <h2>3.3 Present — Visual AIDS</h2>
+    <figure>
+      <img src="/img/module3/2rot.jpg" data-media="print" />
+      <img src="/img/module3/2.jpg" />
+    </figure>
+    <p class="smaller">
+      Visual AIDS is at the forefront of keeping the fight against AIDS going,
+      supporting artists and projects to produce awareness and funding projects
+      to do the same.
+    </p>
+  </div>
+  <div data-page-zine="7">
+    <h2>3.4 Present — The QDHP</h2>
+    <figure>
+      <img src="/img/module3/3rot.jpg" data-media="print" />
+      <img src="/img/module3/3.jpg" />
+    </figure>
+    <p class="smaller">
+      The Queer Digital History Project is a historiography project documenting
+      pre-2010 LGBTQ digital spaces online. They provide resources and reading
+      material regarding the early beginnings of the LGBTQ internet space, as
+      well as archives of UseNets, BBS groups, primary documents, and more.
+    </p>
+  </div>
+  <div data-page-zine="8">
+    <div class="number">3</div>
+    <section class="thought">
+      <h3>EXERCISE 3: XHTML Friends</h3>
+      <p
+        >The modern internet and hypermedia lacks human-focused infrastructure
+        to support the creation of networks of friends with raw HTML. XFN
+        supplements this by allowing website links to have personal relationship
+        types: "met", "crush", "sibling", "muse"... is this important?
+      </p>
+      <a href="https://gmpg.org/xfn/">https://gmpg.org/xfn/</a>
+    </section>
+  </div>
+</article>
+
+<style lang="scss">
+  .number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: 10px solid currentColor;
+    border-radius: 100%;
+    padding-inline-end: 0.25rem;
+    padding-block-end: 0.5rem;
+    width: 10rem;
+    height: 10rem;
+    font-weight: 700;
+    font-size: 7rem;
+  }
+
+  h1 {
+    margin-block-end: 0;
+    font-size: 1.5rem;
+    line-height: 1.1;
+    font-family: Arial Narrow;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    margin-block: 0 0.5rem;
+  }
+
+  .circle {
+    margin: auto;
+    border: 1px solid currentColor;
+    border-radius: 100%;
+    aspect-ratio: 1;
+    inline-size: 60%;
+  }
+
+  div[data-page-zine] {
+    border: 10px solid currentColor;
+  }
+
+  div[data-page-zine="4"] {
+    & figure {
+      block-size: 35%;
+
+      &:first-of-type {
+        margin-inline-start: 1rem;
+      }
+
+      &:last-of-type {
+        margin-inline-end: 1rem;
+      }
+    }
+  }
+
+  div[data-page-zine="5"] {
+    & figure {
+      block-size: 40%;
+    }
+  }
+
+  div[data-page-zine="6"] {
+    & figure {
+      block-size: 35%;
+
+      &:first-of-type {
+        margin-inline-start: 1rem;
+      }
+
+      &:last-of-type {
+        margin-inline-end: 1rem;
+      }
+    }
+  }
+
+  div[data-page-zine="7"] {
+    & figure {
+      block-size: 40%;
+    }
+  }
+
+  div[data-page-zine="8"] {
+    & > div {
+      transform: scaleX(-1);
+    }
+
+    & > p,
+    & > h1 {
+      visibility: hidden;
+    }
+  }
+
+  .thought {
+    margin-block-start: auto;
+    // border: 1px solid cyan;
+    padding: 0.5rem;
+    font-size: 0.7rem;
+
+    & h3 {
+      color: cyan;
+      font-weight: 700;
+      font-size: 1rem;
+      font-family: Arial Narrow;
+      text-transform: uppercase;
+    }
+  }
+
+  a:visited {
+    color: white;
+  }
+
+  .thought {
+    margin-block-start: auto;
+    border: 1px solid white;
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    text-align: left;
+
+    & h3 {
+      color: white;
+      font-weight: 700;
+      font-size: 1rem;
+      font-family: Arial Narrow;
+      text-transform: uppercase;
+    }
+  }
+</style>

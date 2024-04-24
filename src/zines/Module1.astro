@@ -1,0 +1,202 @@
+<article data-page style={{ backgroundColor: "white" }}>
+  <div data-page-zine="1">
+    <div class="number">1</div>
+    <h1>Publishing<br />Between the Lines</h1>
+    <p>
+      Guerrilla tactics in publishing counter-cultural materials through
+      existing corporate frameworks.
+    </p>
+  </div>
+  <div data-page-zine="2">
+    <p style="margin-block-end: auto;">
+      The use of corporate tools and ecosystems for counter-cultural purposes
+      exists in a rich and storied history. By appropriating corporate tools and
+      imagery, artists use a form of targeted subterfuge to more easily
+      disseminate ephemera through pre-existing visual lexicons, infrastructure,
+      and platforms.
+    </p>
+  </div>
+  <div data-page-zine="3">
+    <h2>1.1 Design</h2>
+    <p style="margin-block-end: auto;">
+      The co-optation of mass-media design by counter-cultural movements in the
+      20th century represented a strategic blurring of aesthetic boundaries to
+      broaden the appeal and accessibility of radical content. By adopting the
+      familiar look and feel of mainstream newspapers, magazines, and
+      advertisements, counter-culture artists and activists repurposed these
+      formats to disseminate shocking messages to the larger public that
+      challenged societal norms and advocated for political and social change.
+    </p>
+  </div>
+  <div data-page-zine="4">
+    <figure>
+      <img src="/img/module1/newLeftNotesRot.png" data-media="print" />
+      <img src="/img/module1/newLeftNotes.png" />
+      <figcaption>"New Left Notes"</figcaption>
+    </figure>
+    <figure>
+      <img src="/img/module1/friendsRot.png" data-media="print" />
+      <img src="/img/module1/friends.png" />
+      <figcaption>"Friends" magazine</figcaption>
+    </figure>
+  </div>
+  <div data-page-zine="5">
+    <h2>1.2 Infrastructure</h2>
+    <p>
+      Far more important to many counter-cultural figures than co-opting a
+      mainstream aesthetic were co-opting expensive physical production
+      resources—copy machines, printers, computers, paper, and other tools
+      available freely at public institutions or in private companies, or at a
+      price in copy shops.
+    </p><p style="margin-block-end: auto;"
+      >Nascent technology before the digital surveillance age allowed for this
+      easily, as long as no toes were stepped on.
+    </p>
+  </div>
+  <div data-page-zine="6">
+    <figure>
+      <img src="/img/module1/captainRot.png" data-media="print" />
+      <img src="/img/module1/captain.png" />
+      <figcaption
+        >Captain Crunch was a famous phone phreak, hijacking telecomm lines to
+        freely call</figcaption
+      >
+    </figure>
+    <figure>
+      <img src="/img/module1/msdavisRot.png" data-media="print" />
+      <img src="/img/module1/msdavis.png" />
+      <figcaption
+        >Monochrome copy machine zines like Yes, Ms. Davis were easily printed
+        en masse at business copy machines</figcaption
+      >
+    </figure>
+  </div>
+  <div data-page-zine="7">
+    <h2>1.3 Platforms</h2>
+    <p style="margin-block-end: auto;">
+      Today, thanks to the internet, creation and dissemination of
+      counter-culture resources and information is easier than ever. Knowledge
+      consumption has moved online onto centralized social media platforms
+      through curated pipelines—news, on high-traffic news websites through
+      multiple layers of editors.</p
+    >
+  </div>
+  <div data-page-zine="8">
+    <div class="number">1</div>
+    <section class="thought">
+      <h3>EXERCISE 1: Steganography</h3>
+      <p
+        >Engineers at large corporations can encode hidden binary messages
+        inside of content published to sites, invisible to those without the
+        correct tools. Can this be a means of subversive publishing—using
+        massive platforms as the medium itself (albeit as a trojan horse)?
+      </p>
+      <a href="https://en.wikipedia.org/wiki/Steganography"
+        >https://en.wikipedia.org/wiki/Steganography</a
+      >
+    </section>
+  </div>
+</article>
+
+<style lang="scss">
+  .number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: 10px solid red;
+    border-radius: 100%;
+    padding-inline-end: 0.25rem;
+    padding-block-end: 0.5rem;
+    width: 10rem;
+    height: 10rem;
+    color: red;
+    font-weight: 700;
+    font-size: 7rem;
+  }
+
+  h1 {
+    margin-block-end: 0;
+    color: red;
+    font-size: 1.5rem;
+    line-height: 1.1;
+    font-family: Arial Narrow;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    margin-block: 0 0.5rem;
+    color: red;
+  }
+
+  .circle {
+    margin: auto;
+    border: 1px solid currentColor;
+    border-radius: 100%;
+    aspect-ratio: 1;
+    inline-size: 60%;
+  }
+
+  div[data-page-zine] {
+    border: 10px solid #ff0000;
+  }
+
+  div[data-page-zine="4"] {
+    & figure {
+      block-size: 40%;
+
+      &:first-of-type {
+        margin-inline-start: 1rem;
+      }
+
+      &:last-of-type {
+        margin-inline-end: 1rem;
+      }
+    }
+  }
+
+  div[data-page-zine="6"] {
+    & figure {
+      block-size: 30%;
+
+      &:first-of-type {
+        margin-inline-start: 1rem;
+      }
+
+      &:last-of-type {
+        margin-inline-end: 1rem;
+      }
+    }
+  }
+
+  div[data-page-zine="8"] {
+    & > div {
+      transform: scaleX(-1);
+    }
+
+    & > p,
+    & > h1 {
+      visibility: hidden;
+    }
+  }
+
+  .thought {
+    margin-block-start: auto;
+    border: 1px solid red;
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    text-align: left;
+
+    & h3 {
+      color: red;
+      font-weight: 700;
+      font-size: 1rem;
+      font-family: Arial Narrow;
+      text-transform: uppercase;
+    }
+  }
+
+  a:visited {
+    color: red;
+  }
+</style>

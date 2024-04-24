@@ -1,0 +1,39 @@
+---
+import RootLayout from "@/layouts/RootLayout.astro";
+import "@/styles/global.scss";
+import Binding from "@/zines/Binding.astro";
+import Module1 from "@/zines/Module1.astro";
+import Module2 from "@/zines/Module2.astro";
+import Module3 from "@/zines/Module3.astro";
+---
+
+<RootLayout>
+  <main>
+    <h1>Graphic Design Histories</h1>
+    <p
+      >This website functions both as digital and physical resource. Following
+      this intro text are four printable zines, assemblable together to build
+      the main final project for this class. Using the <code>@media print</code>
+      CSS media query, each zine is formatted into a standard 8-page A4 zine.
+    </p>
+    <p
+      >However, where this style of page setting differs from the traditional
+      InDesign manner is in the web-first design principle of fluid layout. This
+      means that the pages can take on any resolution desired, from landscape
+      orientation to portrait orientation.</p
+    >
+    <p
+      >The goal of this final project is (a) to act as a capstone for the
+      course, combining all module KeyNote papers into a single digestable
+      format, and (b) to advertise the benefits of fluid layout design systems.
+    </p>
+  </main>
+  <h2 class="no-print">Binding</h2>
+  <Binding />
+  <h2 class="no-print">Module 1: Guerilla Publishing</h2>
+  <Module1 />
+  <h2 class="no-print">Module 2: Independent Platforming</h2>
+  <Module2 />
+  <h2 class="no-print">Module 3: LBGTQ+ Online</h2>
+  <Module3 />
+</RootLayout>

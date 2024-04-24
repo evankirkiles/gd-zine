@@ -1,0 +1,51 @@
+---
+import { AstroFont } from "astro-font";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#d5d5cf" />
+    <meta name="msapplication-TileColor" content="#d5d5cf" />
+    <meta name="theme-color" content={"#fff"} />
+    <AstroFont
+      config={[
+        {
+          name: "ABC Diatype",
+          src: [
+            {
+              style: "normal",
+              weight: "400",
+              path: "./public/fonts/ABC_Diatype_Edu_Web/ABCDiatypeEdu-Regular.woff",
+            },
+            {
+              style: "normal",
+              weight: "700",
+              path: "./public/fonts/ABC_Diatype_Edu_Web/ABCDiatypeEdu-Bold.woff",
+            },
+            {
+              style: "italic",
+              weight: "400",
+              path: "./public/fonts/ABC_Diatype_Edu_Web/ABCDiatypeEdu-RegularItalic.woff",
+            },
+          ],
+          display: "swap",
+          preload: true,
+          selector: "body",
+          fallback: "sans-serif",
+        },
+      ]}
+    />
+    <slot name="head" />
+  </head>
+  <body lang="en">
+    <slot />
+  </body></html
+>

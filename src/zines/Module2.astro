@@ -1,0 +1,258 @@
+<article data-page style={{ backgroundColor: "black", color: "white" }}>
+  <div data-page-zine="1">
+    <div class="number">2</div>
+    <h1>Spinning The Web</h1>
+    <p>
+      Collective web-like publishing for <br />low-web or non-web networks.
+    </p>
+  </div>
+  <div data-page-zine="2">
+    <p>
+      The existence of the web as we know it was defined by subversion. The
+      network was initially created for U.S. Military defense purposes, but
+      electronic sharing of information very quickly took off. The web was
+      defined by at least two properties:
+    </p>
+    <ol style="margin-block-end: auto;">
+      <li>
+        <strong>Digitality</strong> — The web is accessed by a computer connected
+        to the internet. Without access to such a device, you cannot partake in the
+        sharing of information that is the web.
+      </li>
+
+      <li
+        ><strong>Democracy</strong> — Information sharing is open, democratic, and
+        accessible, with the goal of improving group understanding and communication.</li
+      >
+    </ol>
+  </div>
+  <div data-page-zine="3">
+    <p>
+      This zine surfaces ways in which collectives capitalize on web-like modes
+      of publishing through non-web and low- web means.
+    </p><p
+      >The first two examples—from class—tackle the “digitality” of web.They are
+      resources published similarly to websites (particularly, capitalizing on
+      hypermedia), but distincitly without requiring a computer.
+    </p><p style="margin-block-end: auto;"
+      >The second set of examples— from outside of class—rather than forgo the
+      “democracy” of the web, put it at its forefront. They make the web truly
+      accessible through considerations of internet access, old tech, and areas
+      without extensive technical infrastructure.
+    </p>
+  </div>
+  <div data-page-zine="4">
+    <h2>2.1 Digi — Cassandra Press</h2>
+    <figure>
+      <img src="/img/module2/cassandraRot.png" data-media="print" />
+      <img src="/img/module2/cassandra.png" />
+    </figure>
+    <p class="smaller">
+      Cassandra press collects and publishes “readers” of information in
+      pseudo-hypermedia fashion. Much like images and documents hyperlinked in
+      websites, the original sources are presented as-is through copies and
+      scans. Where traditional readers sometimes re-format, quote, and
+      paraphrase external documents, cassandra press exists entirely in its
+      external references. It falls along design lines we are used to through a
+      web browser-first world—rapid shifts and changes in format along a
+      unifying line of thought and query.
+    </p>
+  </div>
+  <div data-page-zine="5">
+    <h2>2.2 Digi — Printed Web</h2>
+    <figure>
+      <img src="/img/module2/printedWebRot.jpg" data-media="print" />
+      <img src="/img/module2/printedWeb.png" />
+    </figure>
+    <p class="smaller">
+      Printed Web focuses on taking web-presentation and bringing it directly to
+      print. It capitalizes on the “print” feature of websites (which can be
+      specifically targeted through styling languages) to create direct
+      “web-to-print” art, then distributable as printed matter like a standard
+      print publication. The project uses the web and HTML solely as design
+      tool, whereas traditional publications would use a tool like InDesign.
+    </p>
+  </div>
+  <div data-page-zine="6">
+    <h2>2.3 Demo — Low-Tech Mag</h2>
+    <figure>
+      <img src="/img/module2/ltMagRot.jpg" data-media="print" />
+      <img src="/img/module2/ltMag.png" />
+    </figure>
+    <p class="smaller">
+      Low-Tech Magazine frontlines accessibility and sustainability. The website
+      itself is hosted on a solar-powered server on a minimal device. It
+      considers the very real future of renewable energy, in which internet and
+      digital presence must consider the limitations of solar and wind power.
+      Its small digital footprint and low-tech hosting means that such a system
+      can be setup without reliance on a huge digital provider like Amazon Web
+      Services or Google, to name a few.
+    </p>
+  </div>
+  <div data-page-zine="7">
+    <h2>2.4 Demo — 100rabbits</h2>
+    <figure>
+      <img src="/img/module2/100rRot.png" data-media="print" />
+      <img src="/img/module2/100r.png" />
+    </figure>
+    <p class="smaller">
+      100rabbits also frontlines accessibility and sustainability. A group of
+      two (one engineer, one designer) living in a boat, they examine the world
+      at the fringes of the grid. Their publications are both informational (on
+      the website) and technical (through their low-level software and games).
+    </p>
+  </div>
+  <div data-page-zine="8">
+    <div class="number">2</div>
+    <section class="thought">
+      <h3>EXERCISE 2: Offline Websites</h3>
+      <p
+        >One can build a small device that transmits a local WiFi signal to a
+        ~80ft radius, offering a single or collection of websites even when no
+        general internet connection exists. Might this be a method of delivering
+        interactive organizing material directly to the public, e.g. on subways?
+      </p>
+      <a href="https://en.wikipedia.org/wiki/Wireless_router"
+        >https://en.wikipedia.org/wiki/Wireless_router</a
+      >
+    </section>
+  </div>
+  <img src="/img/module2/spiderweb.png" class="spiderweb" />
+</article>
+
+<style lang="scss">
+  .spiderweb {
+    position: absolute;
+    opacity: 0.1;
+    z-index: 1;
+    mix-blend-mode: lighten;
+    inset: 0;
+    inline-size: 100%;
+    block-size: 100%;
+  }
+
+  .number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: 10px solid currentColor;
+    border-radius: 100%;
+    padding-inline-end: 0.25rem;
+    padding-block-end: 0.5rem;
+    width: 10rem;
+    height: 10rem;
+    font-weight: 700;
+    font-size: 7rem;
+  }
+
+  h1 {
+    margin-block-end: 0;
+    font-size: 1.5rem;
+    line-height: 1.1;
+    font-family: Arial Narrow;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    margin-block: 0 0.5rem;
+  }
+
+  .circle {
+    margin: auto;
+    border: 1px solid currentColor;
+    border-radius: 100%;
+    aspect-ratio: 1;
+    inline-size: 60%;
+  }
+
+  div[data-page-zine] {
+    border: 10px solid currentColor;
+  }
+
+  div[data-page-zine="4"] {
+    & figure {
+      block-size: 35%;
+
+      &:first-of-type {
+        margin-inline-start: 1rem;
+      }
+
+      &:last-of-type {
+        margin-inline-end: 1rem;
+      }
+    }
+  }
+
+  div[data-page-zine="5"] {
+    & figure {
+      block-size: 35%;
+    }
+  }
+
+  div[data-page-zine="6"] {
+    & figure {
+      block-size: 35%;
+
+      &:first-of-type {
+        margin-inline-start: 1rem;
+      }
+
+      &:last-of-type {
+        margin-inline-end: 1rem;
+      }
+    }
+  }
+
+  div[data-page-zine="7"] {
+    & figure {
+      block-size: 40%;
+    }
+  }
+
+  div[data-page-zine="8"] {
+    & > div {
+      transform: scaleX(-1);
+    }
+
+    & > p,
+    & > h1 {
+      visibility: hidden;
+    }
+  }
+
+  .thought {
+    margin-block-start: auto;
+    // border: 1px solid cyan;
+    padding: 0.5rem;
+    font-size: 0.7rem;
+
+    & h3 {
+      color: cyan;
+      font-weight: 700;
+      font-size: 1rem;
+      font-family: Arial Narrow;
+      text-transform: uppercase;
+    }
+  }
+
+  a:visited {
+    color: yellow;
+  }
+
+  .thought {
+    margin-block-start: auto;
+    border: 1px solid yellow;
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    text-align: left;
+
+    & h3 {
+      color: yellow;
+      font-weight: 700;
+      font-size: 1rem;
+      font-family: Arial Narrow;
+      text-transform: uppercase;
+    }
+  }
+</style>
