@@ -33,40 +33,40 @@ article[data-page] {
   font-size: 0.8rem;
 
   @media screen {
-    border: 1px solid black;
     margin-block-end: 1rem;
+    border: 1px solid black;
   }
 
   @media print {
-    width: 100vw;
-    height: 100vh;
-    page-break-before: always;
     display: grid;
     grid-template:
       "p2 p1" 1fr
       "p3 p8" 1fr
       "p4 p7" 1fr
       "p5 p6" 1fr / 1fr 1fr;
+    page-break-before: always;
+    width: 100vw;
+    height: 100vh;
   }
 }
 
 div[data-page-zine] {
-  padding: 1em;
-  position: relative;
   display: flex;
+  position: relative;
   flex-direction: column;
+  padding: 1em;
 
   @media screen {
-    block-size: 420px;
-    aspect-ratio: 0.707;
     border-inline-end: 1px solid var(--clr-border);
+    aspect-ratio: 0.707;
+    block-size: 420px;
   }
 
   @media print {
-    aspect-ratio: unset;
-    writing-mode: vertical-rl;
     border-inline-start: 1px dashed var(--clr-border);
+    aspect-ratio: unset;
     overflow: hidden;
+    writing-mode: vertical-rl;
 
     $toFlip: 1, 8, 7, 6;
     @for $i from 1 through 8 {
@@ -88,7 +88,8 @@ article {
   position: relative;
   counter-reset: page;
 
-  & > div[data-page-zine="1"], & > div[data-page-zine="8"] {
+  & > div[data-page-zine="1"],
+  & > div[data-page-zine="8"] {
     text-align: center;
   }
 
@@ -110,9 +111,9 @@ img {
   }
 
   @media print {
-    block-size: auto;
-    inline-size: 100%;
     display: none;
+    inline-size: 100%;
+    block-size: auto;
 
     &[data-media="print"] {
       display: block;
@@ -125,8 +126,6 @@ img {
     display: none;
   }
 }
-
-
 
 figure {
   display: block;
